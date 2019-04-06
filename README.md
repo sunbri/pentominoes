@@ -1,5 +1,4 @@
 # pentominoes
-
 This is a program that attempts to tessellate any 60-squared board with the 12 unique pentominoes using a simple backtracking algorithm. 
 
 ## Usage
@@ -38,3 +37,36 @@ T T ·
 · · T   
 ```
 where the piece is drawn using T's and the coordinates shown are the place on the board to position the top left corner of the rectangle containing the piece. 
+
+## Sample output
+Here's an output for the 6x10 board
+```
+W (0, 0)   Y (0, 2)   X (0, 5)   U (0, 7)  I (0, 9)   N (1, 0)   T (1, 3)   V (3, 0)   F (3, 2)
+T T ·      T T T T    · T ·      T T       T          T ·        T · ·      T · ·      T · ·
+· T T      · · T ·    T T T      · T       T          T T        T T T      T · ·      T T T
+· · T                 · T ·      T T       T          · T        T · ·      T T T      · T ·
+                                           T          · T
+                                           T
+
+P (3, 4)   Z (3, 7)   L (4, 4)
+T T T      T T ·      · · · T
+· T T      · T ·      T T T T
+           · T T
+```
+Put together, this solution yields the following tessellation:
+```
+    0   1   2   3   4   5   6   7   8   9
+  +---+---+---+---+---+---+---+---+---+---+
+0 |       |               |   |       |   |
+  +---+   +---+---+   +---+   +---+   +   +
+1 |   |       |   |   |           |   |   |
+  +   +---+   +   +---+---+   +---+   +   +
+2 |       |   |           |   |       |   |
+  +---+   +---+   +---+---+---+---+---+   +
+3 |   |   |   |   |           |       |   |
+  +   +   +   +---+---+       +---+   +   +
+4 |   |   |           |       |   |   |   |
+  +   +---+---+   +---+---+---+   +   +---+
+5 |           |   |               |       |
+  +---+---+---+---+---+---+---+---+---+---+
+```
