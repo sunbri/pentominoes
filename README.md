@@ -3,7 +3,11 @@
 This is a program that attempts to tessellate any 60-squared board with the 12 unique pentominoes using a simple backtracking algorithm. 
 
 ## Usage
-To run the program with a default 6x10 board, use
+To compile the program, use
+```
+javac Tessellate.java
+```
+Then, to run the program with a default 6x10 board, use
 ```
 java Tessellate
 ```
