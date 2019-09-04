@@ -1,5 +1,5 @@
 # pentominoes
-This is a program that attempts to tessellate any 60-squared board with the 12 unique pentominoes using a simple backtracking algorithm. 
+This is a program that attempts to tessellate any 60-squared board with the 12 unique pentominoes using a backtracking algorithm (along with a few speed-enhancing heuristics). 
 
 ## Usage
 To compile the program, use
